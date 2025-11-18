@@ -1,0 +1,22 @@
+# create a basic .gitignore
+@"
+# Node / JS
+node_modules/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# archives / generated / logs
+*.zip
+*.log
+.env
+"@ > .gitignore
+
+# open it in VS Code if you want to edit
+code .gitignore
