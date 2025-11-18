@@ -1,0 +1,306 @@
+<!-- find min number from given array --> 
+<!-- <!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Find Minimum Number</title>
+</head>
+<body>
+
+    <h3>Find Minimum Number from Array</h3>
+
+    <script>
+        
+        let numbers = [10, 5, 2, 8, 15];
+
+        
+        let minNumber = Math.min(...numbers);
+
+       
+        document.write("Array: " + numbers + "<br>");
+        document.write("Minimum Number: " + minNumber);
+    </script>
+
+</body> -->
+</html>  
+ 
+
+
+
+
+
+ <!-- find second min number from given array  -->
+ <!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Find Second Minimum Number</title>
+</head>
+<body>
+
+    <h3>Find Second Minimum Number from Array</h3>
+
+    <script>
+       
+        let numbers = [10, 5, 2, 8, 15, 1];
+
+        
+        numbers.sort((a, b) => a - b);
+
+        
+        let secondMin = numbers[1];
+
+        
+        document.write("Array: " + numbers + "<br>");
+        document.write("Second Minimum Number: " + secondMin);
+    </script>
+
+</body>
+</html>  -->
+ 
+
+
+
+
+
+
+<!-- find max number from given array -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Find Maximum Number</title>
+</head>
+<body>
+
+    <h3>Find Maximum Number from Array</h3>
+
+    <script>
+        
+        let numbers = [10, 5, 2, 8, 15, 1];
+
+        
+        let maxNumber = Math.max(...numbers);
+
+        
+        document.write("Array: " + numbers + "<br>");
+        document.write("Maximum Number: " + maxNumber);
+    </script>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- find second max number from given array -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h3>Find Second Maximum Number</h3>
+
+<p id="result"></p>
+
+<script>
+  
+  let numbers = [10, 25, 8, 32, 19];
+
+  
+  let max = Math.max(...numbers);
+
+  
+  numbers = numbers.filter(num => num !== max);
+
+  
+  let secondMax = Math.max(...numbers);
+
+  
+  document.getElementById("result").innerHTML = "Second Maximum Number: " + secondMax;
+</script>
+
+</body>
+</html> -->
+ 
+
+
+
+
+
+<!-- find sum of all the elements form given array -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h3>Sum of Array Elements</h3>
+
+<p id="result"></p>
+
+<script>
+  
+  let numbers = [10, 20, 30, 40, 50];
+
+  
+  let sum = 0;
+  for(let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+
+  
+  document.getElementById("result").innerHTML = "Sum of all elements: " + sum;
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- display even and odd numbers from given array -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h3>Display Even and Odd Numbers from Array</h3>
+
+<p id="evenResult"></p>
+<p id="oddResult"></p>
+
+<script>
+ 
+  let numbers = [10, 15, 22, 33, 40, 55];
+
+  
+  let evenNumbers = [];
+  let oddNumbers = [];
+
+  
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      evenNumbers.push(numbers[i]); // even
+    } else {
+      oddNumbers.push(numbers[i]); // odd
+    }
+  }
+
+  
+  document.getElementById("evenResult").innerHTML = "Even Numbers: " + evenNumbers;
+  document.getElementById("oddResult").innerHTML = "Odd Numbers: " + oddNumbers;
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- find duplicates from an array -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h3>Find Duplicates in an Array</h3>
+
+<p id="result"></p>
+
+<script>
+  
+  let numbers = [10, 20, 30, 20, 40, 10, 50, 30];
+
+  
+  let duplicates = [];
+
+  
+  for (let i = 0; i < numbers.length; i++) {
+    for (let j = i + 1; j < numbers.length; j++) {
+      if (numbers[i] === numbers[j] && !duplicates.includes(numbers[i])) {
+        duplicates.push(numbers[i]);
+      }
+    }
+  }
+
+  
+  document.getElementById("result").innerHTML =
+    "Duplicate Elements: " + duplicates;
+</script>
+
+</body>
+</html>
+
+ -->
+
+
+
+
+
+
+
+<!-- sort array in ascending and descending order -->
+ <!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h3>Sort Array in Ascending and Descending Order</h3>
+
+<p id="ascResult"></p>
+<p id="descResult"></p>
+
+<script>
+ 
+  let numbers = [40, 10, 50, 20, 30];
+
+ 
+  let ascending = [...numbers].sort(function(a, b) {
+    return a - b;
+  });
+
+  
+  let descending = [...numbers].sort(function(a, b) {
+    return b - a;
+  });
+
+  
+  document.getElementById("ascResult").innerHTML = "Ascending Order: " + ascending;
+  document.getElementById("descResult").innerHTML = "Descending Order: " + descending;
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- reverse an array -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h3>Reverse an Array</h3>
+
+<p id="result"></p>
+
+<script>
+ 
+  let numbers = [10, 20, 30, 40, 50];
+
+  
+  let reversedArray = numbers.reverse();
+
+  
+  document.getElementById("result").innerHTML = "Reversed Array: " + reversedArray;
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+

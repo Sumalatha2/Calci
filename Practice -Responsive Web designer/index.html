@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Web Design Example</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 15px;
+    }
+
+    .box {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    .box img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    @media (max-width: 1024px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Modern Cars</h1>
+
+  <div class="grid-container">
+    <div class="box"><img src="./Hyundai Creta.jpg" alt="img1"><p>Hyundai Creta</p></div>
+    <div class="box"><img src="./Tata Nexon.jpg" alt="img2"><p>Tata Nexon</p></div>
+    <div class="box"><img src="./Maruti Suzuki Swift.jpg" alt="img3"><p>Maruti Suzuki Swift</p></div>
+    <div class="box"><img src="./Mahindra XUV700.jpg" alt="img4"><p>Mahindra XUV700</p></div>
+    <div class="box"><img src="./Hyundai Venue.jpg" alt="img5"><p>Hyundai Venue</p></div>
+    <div class="box"><img src="./Kia Seltos.jpg" alt="img6"><p>Kia Seltos</p></div>
+  </div>
+
+</body>
+</html>

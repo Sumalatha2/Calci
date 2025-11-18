@@ -1,0 +1,1150 @@
+FRONTEND :-
+
+
+1) Html Tags:
+
+Basic Page Tags
+
+Tag	                        Description	                   Example
+<!DOCTYPE html>       	Defines HTML5 document type	          <!DOCTYPE html>
+<html>	                Root element of HTML document	          <html> ... </html>
+<head>	                Contains metadata (title, links, styles)  <head>...</head>
+<title>	                Sets page title (shows in browser tab)	  <title>My Page</title>
+<body>	                Contains visible page content	          <body>...</body>
+
+Text Formatting Tags
+
+Tag	                       Description	            Example
+
+<h1> to <h6>	            Headings(h1 is largest)	<h1>Heading</h1>
+<p>	                    Paragraph	                <p>This is a paragraph.</p>
+<br>	                    Line break	                 Hello<br>World
+<hr>	                    Horizontal line	             <hr>
+<b>	                    Bold text	                  <b>Bold</b>
+<i>	                    Italic text	                    <i>Italic</i>
+<u>	                    Underlined text	            <u>Underlined</u>
+<strong>	            Important (bold)	          <strong>Important!</strong>
+<em>	                     Emphasized (italic)	<em>Emphasis</em>
+<small>	                       Smaller text	          <small>Note</small>
+<mark>	                       Highlighted text	             <mark>Highlight</mark>
+
+Links and Images
+
+Tag	Description	                   Example
+<a>	Creates a hyperlink	        <a href="https://google.com">Google</a>
+<img>	Displays image	                <img src="pic.jpg" alt="Picture">
+
+Lists
+Tag	Description	                 Example
+<ul>	Unordered list (bullets)	<ul><li>Item</li></ul>
+<ol>	Ordered list (numbers)	         <ol><li>First</li></ol>
+<li>	List item	                <li>Apple</li>
+
+Tables
+Tag	Description	  Example
+<table>	Defines a table	<table>...</table>
+<tr>	Table row	<tr>...</tr>
+<th>	Header cell	<th>Name</th>
+<td>	Table data cell	<td>John</td>
+
+Forms and Inputs
+
+Tag	          Description	                     Example
+<form>	           Creates a form	           <form>...</form>
+<input>	            Input field	                  <input type="text">
+<label>	          Label for input	           <label>Name:</label>
+<select>	Dropdown menu	                  <select><option>Option</option></select>
+<textarea>	Multi-line input box	          <textarea></textarea>
+<button>	Clickable button	          <button>Click</button>
+
+Containers and Structure
+
+Tag	                           Description	                       Example
+<div>	                    Block container (used for layout)	   <div>Block section</div>
+<span>	                    Inline container (for text styling)	   <span style="color:red">Red Text</span>
+<header>	             Page header section	           <header>Header area</header>
+<footer>	           Page footer section	                    <footer>Footer info</footer>
+<section>	           Defines a section	                    <section>Content area</section>
+<article>	                Independent content block	    <article>Blog post</article>
+<nav>	                          Navigation links	             <nav>Menu here</nav>
+
+Media Tags
+
+Tag	            Description	                  Example
+<audio>	             Embed audio	<audio controls src="song.mp3"></audio>
+<video>	             Embed video	<video controls src="movie.mp4"></video>
+<source>	Specifies media source	<source src="file.mp4">
+
+Scripting and Styling
+
+Tag	                 Description	          Example
+<script>	Adds JavaScript	              <script>console.log("Hi")</script>
+<style>	          Adds internal CSS	       <style>p {color:red;}</style>
+<link>	          Links external CSS file      <link rel="stylesheet" href="style.css">
+
+Meta and Head Tags
+
+Tag	Description	             Example
+<meta>	Defines metadata	<meta charset="UTF-8">
+<title>	Page title	        <title>Home</title>
+<base>	Sets base URL	        <base href="https://example.com/">
+
+
+
+
+
+2)Attributes in html:
+
+Attributes provide extra information about an HTML element.
+They are always written inside the opening tag, and usually appear as name–value pairs.
+
+Syntax:
+
+<tagname attribute="value">Content</tagname>
+
+
+Example:
+
+<a href="https://www.google.com">Visit Google</a>
+
+
+Here:
+
+href → attribute name
+
+"https://www.google.com" → attribute value
+
+1. Basic Example
+<img src="photo.jpg" alt="My Photo" width="200" height="150">
+
+Attribute	Description	                     Example Value
+
+src	     Path to the image	                       "photo.jpg"
+alt	     Alternate text (if image not found)	"My Photo"
+width	     Image width	                           "200"
+height	     Image height	                           "150"
+
+2. Common HTML Attributes
+
+Attribute	Description	                          Example
+
+id	        Unique identifier for element	        <p id="para1">Hello</p>
+class	        Group of elements with same style	<p class="intro">Hi</p>
+style	        Inline CSS styling	                <p style="color:red;">Red text</p>
+title	        Tooltip on hover	                <p title="Greeting">Hello!</p>
+lang	        Sets language	                        <html lang="en">
+dir	        Text direction	                        <p dir="rtl">Right to left</p>
+hidden	        Hides the element	                <p hidden>This is hidden</p>
+contenteditable	Makes text editable	                <p contenteditable="true">Edit me</p>
+
+
+
+
+3)Buttons in Html:
+
+In HTML, a <button> tag is used to create a clickable button that can:
+
+Submit a form
+
+Reset form data
+
+Run JavaScript code
+
+Perform any custom action (like show/hide content)
+
+Basic Syntax
+<button>Click Me</button>
+
+
+This creates a simple button on the webpage.
+
+1. Types of Buttons
+
+HTML buttons have three main types defined by the type attribute:
+
+Type	Description	                             Example
+submit	Submits the form data	                 <button type="submit">Submit</button>
+reset	Clears all form fields	                 <button type="reset">Reset</button>
+button	Regular button (used with JS)	         <button type="button">Click Me</button>
+Example:
+<form>
+  <input type="text" placeholder="Enter your name"><br><br>
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+  <button type="button" onclick="alert('Hello!')">Click Me</button>
+</form>
+
+
+Output:
+
+The Submit button submits the form.
+
+The Reset button clears input.
+
+The Click Me button runs JavaScript (alert()).
+
+
+
+       
+
+4)Form Elements
+
+Form Element                       Purpose
+
+<form>	                Defines a form used to collect user input.
+<input>	                Used to get user input in various types (text, password, email, etc.).
+<label>	                Defines a label for an input element; improves accessibility.
+<textarea>	        Allows users to enter multi-line text (e.g., comments).
+<select>	        Creates a dropdown list for selecting one or more options.
+<option>	        Defines an item inside a <select> dropdown list.
+<button>	        Creates a clickable button (can be submit, reset, or custom).
+<fieldset>	        Groups related form elements together.
+<legend>	        Defines a caption or title for a <fieldset>.
+<datalist>	        Provides predefined options for an <input> element (auto-suggestion).
+<output>	        Displays the result of a calculation or script.
+<optgroup>	        Groups related <option> elements inside a dropdown.
+<label for>	        Links text labels to input fields for better usability.
+<input type="hidden">	Stores hidden data that’s not visible to users.
+
+
+
+
+5)Input Elements
+
+Input Type	Purpose
+text	        Used to enter a single line of plain text.
+password 	Used to enter text that is hidden (for passwords).
+email	        Used to enter a valid email address.
+number	        Used to enter numeric values only.
+date	        Used to select a date from a calendar.
+datetime-local	Used to select both date and time (local).
+time	        Used to select a time value.
+month	        Used to select a month and year.
+week	        Used to select a week and year.
+radio	        Allows the user to select only one option from a group.
+checkbox	Allows the user to select multiple options.
+file	        Used to upload files from the user’s system.
+submit	        Submits the form data to the server.
+reset	        Resets all form fields to their default values.
+button	        Defines a clickable button that can perform custom actions.
+hidden	        Stores data that’s not visible to the user but sent with the form.
+color	        Lets the user pick a color using a color picker.
+url	        Used to enter a valid website address (URL).
+tel	        Used to enter a telephone number.
+range	        Used to select a numeric value within a range using a slider.
+search	        Used to enter a search query; similar to text but optimized for search fields.
+image	        Works like a submit button but uses an image instead of text.
+
+
+
+
+6) JS Arrays
+
+Create an Array
+let fruits = ["Apple", "Banana", "Mango"];
+console.log(fruits);
+
+Creates an array of fruit names.
+
+2. Access Array Elements
+let colors = ["Red", "Green", "Blue"];
+console.log(colors[0]); // Red
+console.log(colors[2]); // Blue
+
+
+Access items using index numbers (starting from 0).
+
+3. Add Elements to an Array
+let numbers = [1, 2, 3];
+numbers.push(4);  // Adds at the end
+numbers.unshift(0);  // Adds at the beginning
+console.log(numbers); // [0, 1, 2, 3, 4]
+
+4. Remove Elements from an Array
+let names = ["John", "Sara", "Mike"];
+names.pop();   // Removes last element
+names.shift(); // Removes first element
+console.log(names); // ["Sara"]
+
+ 5. Loop Through an Array
+let animals = ["Dog", "Cat", "Elephant"];
+for (let i = 0; i < animals.length; i++) {
+  console.log(animals[i]);
+}
+
+6. Find Length of an Array
+let arr = [10, 20, 30, 40];
+console.log(arr.length); // 4
+
+7. Update Array Element
+let cars = ["BMW", "Audi", "Ford"];
+cars[1] = "Tesla";
+console.log(cars); // ["BMW", "Tesla", "Ford"]
+
+ 8. Example with Different Data Types
+let mix = ["Sumalatha", 25, true, null];
+console.log(mix);
+
+
+
+
+
+7) web storage 
+
+Web Storage is used to store data in the browser so it can be used later — even after reloading the page.
+It’s part of the HTML5 API and includes two main types:
+
+Type	        Stores Data For	                                             Data Persists After Closing Browser?
+localStorage	No expiration (permanent until deleted manually)	           Yes
+sessionStorage	Only for one browser session (until tab/window is closed)	   No
+
+localStorage:
+Store Data
+localStorage.setItem("username", "Sumalatha");
+
+Retrieve Data
+let user = localStorage.getItem("username");
+console.log(user);
+
+Remove a Specific Item
+localStorage.removeItem("username");
+
+Clear All Data
+localStorage.clear();
+
+sessionStorage:
+
+Works the same as localStorage, but the data is deleted when the tab or window closes.
+
+Store Data
+sessionStorage.setItem("user", "Dunna");
+
+Retrieve Data
+let name = sessionStorage.getItem("user");
+console.log(name);
+
+Remove Specific Item
+sessionStorage.removeItem("user");
+
+Clear All
+sessionStorage.clear();
+
+
+
+
+
+8) scope :
+Types of Scope in JavaScript:
+
+Type	                    Description
+Global Scope	            Variables declared outside any function or block are global and can be accessed anywhere in the program.
+Local (Function) Scope	    Variables declared inside a function are local to that function and can’t be accessed outside.
+Block Scope	            Variables declared inside {} (using let or const) are only accessible within that block.
+
+global scope :
+
+let name = "Sumalatha"; // Global variable
+
+function greet() {
+  console.log("Hello " + name); // Can access global variable
+}
+
+greet(); // Works
+console.log(name); //  Works
+
+Local (Functional) Scope:
+
+function showMessage() {
+  let message = "Hello World"; // Local variable
+  console.log(message);
+}
+
+showMessage(); // Works
+console.log(message); //  Error (not accessible outside function)
+
+
+Block Scope : (with let and const)
+{
+  let x = 10;
+  const y = 20;
+  var z = 30;
+}
+
+console.log(z); // Works (var is not block-scoped)
+console.log(x); // Error (let is block-scoped)
+console.log(y); // Error (const is block-scoped)
+
+
+
+
+9) JS Objects:
+
+A JavaScript object is a collection of key-value pairs.
+It is used to store multiple values together — like a mini database of related information.
+
+Syntax:
+
+let objectName = {
+  key1: value1,
+  key2: value2,
+  key3: value3
+};
+
+
+Each key is called a property, and each value can be anything — a string, number, array, another object, or even a function.
+Example:
+
+let person = {
+  name: "Sumalatha",
+  age: 25,
+  city: "Hyderabad"
+};
+
+
+Here:
+
+name, age, and city are keys (properties)
+
+"Sumalatha", 25, "Hyderabad" are values
+
+Accessing Object Values:
+
+There are two ways to access values:
+
+Dot notation
+
+console.log(person.name);  // Output: Sumalatha
+
+Bracket notation
+
+console.log(person["city"]);  // Output: Hyderabad
+
+
+
+10)Destructuring :
+
+Destructuring means unpacking values from arrays or objects into separate variables easily.
+
+Instead of extracting values one by one, destructuring lets you do it in a single line.
+
+1. Array Destructuring Example:
+
+let colors = ["red", "green", "blue"];
+let [first, second, third] = colors;
+
+console.log(first);   // red
+console.log(second);  // green
+console.log(third);   // blue
+
+The values from the array are automatically assigned to variables in the same order.
+
+
+
+
+11) JavaScript Loops:
+
+
+1. for Loop
+
+Used when you know how many times you want to run the code.
+
+Syntax:
+for (initialization; condition; increment/decrement) {
+  // code to run
+}
+
+Example:
+for (let i = 1; i <= 5; i++) {
+  console.log("Number:", i);
+}
+
+
+Output:
+
+Number: 1  
+Number: 2  
+Number: 3  
+Number: 4  
+Number: 5
+
+2. while Loop
+
+Used when you don’t know in advance how many times you need to loop.
+
+Syntax:
+while (condition) {
+  // code to run
+}
+
+Example:
+let i = 1;
+while (i <= 5) {
+  console.log(i);
+  i++;
+}
+
+3. do...while Loop
+
+This loop runs the code at least once, even if the condition is false.
+
+Syntax:
+do {
+  // code to run
+} while (condition);
+
+Example:
+let i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i <= 3);
+
+Output:
+
+1  
+2  
+3
+
+4. Nested Loops
+
+Loop inside another loop.
+
+Example:
+for (let i = 1; i <= 3; i++) {
+  for (let j = 1; j <= 2; j++) {
+    console.log(`i = ${i}, j = ${j}`);
+  }
+}
+
+Output:
+
+i = 1, j = 1  
+i = 1, j = 2  
+i = 2, j = 1  
+i = 2, j = 2  
+i = 3, j = 1  
+i = 3, j = 2
+
+
+
+12)Predefined function:
+
+Predefined functions are the functions that JavaScript already provides for you to use — you don’t need to define them yourself.
+
+They help you perform common tasks easily, such as:
+
+converting data types
+
+working with numbers, strings, arrays, and dates
+
+displaying messages, etc.
+
+
+
+13)Dom manipulation:
+
+DOM stands for Document Object Model.
+It represents your HTML page as a tree structure of objects that JavaScript can access and change.
+
+Each element (like <h1>, <p>, <button>, etc.) becomes an object that JavaScript can read, add, modify, or remove.
+
+Example: HTML Page
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 id="title">Welcome!</h1>
+    <p id="message">This is a paragraph.</p>
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+      function changeText() {
+        document.getElementById("message").innerHTML = "You clicked the button!";
+      }
+    </script>
+  </body>
+</html>
+
+
+When the user clicks the button —
+JavaScript changes the paragraph text using DOM manipulation.
+
+
+
+
+14) Get elements in js:
+
+In JavaScript, to access or change something on a webpage (like a heading, paragraph, image, or input),
+you first need to get (select) that element from the DOM (Document Object Model).
+
+JavaScript gives us several methods to do this 
+
+1. document.getElementById()
+Description:
+
+Finds one single element by its id attribute.
+
+Example:
+<h2 id="title">Hello!</h2>
+
+<script>
+let heading = document.getElementById("title");
+heading.style.color = "blue";
+</script>
+
+
+Explanation:
+
+getElementById("title") finds the element with id="title".
+
+Then we changed its color.
+
+Returns: a single element (or null if not found)
+
+2. document.getElementsByClassName()
+Description:
+
+Finds all elements with a given class name.
+
+Example:
+<p class="note">First note</p>
+<p class="note">Second note</p>
+
+<script>
+let notes = document.getElementsByClassName("note");
+notes[0].style.color = "red";  // first <p>
+notes[1].style.color = "green"; // second <p>
+</script>
+
+
+Explanation:
+
+Returns a collection (array-like list) of all elements having the same class.
+
+You can access them using [index].
+
+Returns: HTMLCollection
+
+3. document.getElementsByTagName()
+Description:
+
+Finds all elements with a specific HTML tag.
+
+Example:
+<h3>Heading 1</h3>
+<h3>Heading 2</h3>
+
+<script>
+let headings = document.getElementsByTagName("h3");
+for (let i = 0; i < headings.length; i++) {
+  headings[i].style.color = "purple";
+}
+</script>
+
+
+Explanation:
+
+Selects all <h3> tags.
+
+Loops through them to change color.
+
+Returns: HTMLCollection
+
+4. document.querySelector()
+Description:
+
+Finds the first element that matches a CSS selector.
+
+Example:
+<p class="msg">Hello</p>
+<p class="msg">Hi</p>
+
+<script>
+let firstPara = document.querySelector(".msg");
+firstPara.style.color = "blue";
+</script>
+
+
+Explanation:
+
+.msg is a CSS selector (selects by class name).
+
+It changes only the first matching element.
+
+Returns: single element (first match)
+
+5. document.querySelectorAll()
+Description:
+
+Finds all elements that match a CSS selector.
+
+Example:
+<p class="text">Para 1</p>
+<p class="text">Para 2</p>
+
+<script>
+let paras = document.querySelectorAll(".text");
+paras.forEach(p => p.style.color = "orange");
+</script>
+
+
+Explanation:
+
+.text selects all elements with class text.
+
+Loops through using forEach() to apply changes.
+
+Returns: NodeList (can use forEach())
+
+6. document.getElementsByName()
+Description:
+
+Finds elements with a specific name attribute (often used with forms).
+
+Example:
+<input type="text" name="username" value="Sumalatha">
+<input type="text" name="username" value="Anil">
+
+<script>
+let inputs = document.getElementsByName("username");
+console.log(inputs[0].value); // Output: Sumalatha
+</script>
+
+Returns: NodeList
+
+
+
+15)Block Elements:
+
+In HTML, a block element is an element that:
+
+starts on a new line, and
+
+takes up the full width available (by default).
+
+Examples of block elements:
+
+<div>, <p>, <h1> to <h6>, <form>, <header>, <footer>, <section>, <article>, <table>, <ul>, <ol>, <li>
+
+
+Example:
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+<div>This is a division.</div>
+
+Each one starts on a new line — that’s what makes them block elements.
+
+
+
+
+
+16) Inline Elements:
+
+In HTML, an inline element does not start on a new line.
+It only takes up as much width as needed for its content —
+so other elements can appear on the same line.
+
+Examples of Inline Elements
+
+Here are some of the most common inline elements:
+
+Element          	Description
+<span>	               Used for styling a part of text
+<a>	               Creates a hyperlink
+<b>	               Makes text bold
+<i>	               Makes text italic
+<u>	               Underlines text
+<small>                Displays smaller text
+<strong>	       Shows strong importance (bold)
+<em>	               Emphasized text (italic)
+<img>	               Displays an image
+<input>	               Input field
+<label>	               Label for input elements
+<select>	        Dropdown list
+<textarea>	       Text area (technically inline-block)
+<abbr>	               Abbreviation
+<code>	               Displays code text
+<sub> / <sup>	      Subscript / Superscript text
+
+Example: Inline vs Block Elements
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inline Elements Example</title>
+</head>
+<body>
+  <h2>Block Elements Example:</h2>
+  <p>This is a paragraph.</p>
+  <div>This is a div (block element).</div>
+
+  <h2>Inline Elements Example:</h2>
+  <p>
+    This is <span style="color:red;">inline text</span> inside a paragraph.  
+    <b>Bold</b>, <i>Italic</i>, <u>Underlined</u>, and <a href="#">Link</a> — all inline.
+  </p>
+</body>
+</html>
+
+
+Explanation:
+
+<p> and <div> are block — they start on new lines.
+
+<span>, <b>, <i>, <u>, <a> are inline — they stay on the same line.
+
+
+Difference Between Block and Inline Elements:
+
+Type	         Examples	                           Layout Behavior
+Block	   <div>, <p>, <h1>, <section>	                Starts on a new line, full width
+Inline	   <span>, <a>, <b>, <i>, <input>	        Stays in the same line, only takes needed width
+
+
+
+
+17) Event Attributes :
+
+Mouse Events:
+
+Event Attribute	                     When It Happens	                         Example
+
+onclick	                             When user clicks	                      <button onclick="msg()">Click</button>
+ondblclick	                    When user double-clicks	              <p ondblclick="alert('Double clicked!')">Text</p>
+onmouseover	                    When mouse pointer is over element	      <div onmouseover="this.style.color='red'">Hover me</div>
+onmouseout	                    When mouse leaves element	              <div onmouseout="this.style.color='black'">Leave me</div>
+onmousedown	                    When mouse button is pressed	      <p onmousedown="alert('Pressed!')">Press me</p>
+onmouseup	                    When mouse button is released	      <p onmouseup="alert('Released!')">Release me</p>
+
+Keyboard Events:
+
+Event Attribute	                          When It Happens	                  Example
+
+onkeydown	                         When key is pressed down	         <input onkeydown="console.log('Key down')">
+onkeypress	                         When key is pressed and released	 <input onkeypress="console.log('Key pressed')">
+onkeyup	                                 When key is released	                 <input onkeyup="console.log('Key up')">
+
+
+Form Events:
+
+Event Attribute	                          When It Happens	                Example
+
+onfocus	                                When input field is focused	<input onfocus="this.style.background='lightyellow'">
+onblur	                                When input loses focus	        <input onblur="this.style.background='white'">
+onchange	                        When input value changes	<input onchange="alert('Value changed!')">
+onsubmit	                        When form is submitted	        <form onsubmit="return validateForm()">
+onreset                          	When form is reset	        <form onreset="alert('Form reset!')">
+
+
+Window / Page Events:
+
+Event Attribute	                               When It Happens	                      Example
+
+onload	                                 When page finishes loading	          <body onload="init()">
+onunload	                         When page unloads	                  <body onunload="alert('Bye!')">
+onresize	                         When window is resized                	  <body onresize="console.log('Resized')">
+onscroll	                         When user scrolls the page	          <body onscroll="console.log('Scrolling')">
+
+
+
+
+18) Objects in js:
+
+An object is a collection of key-value pairs.
+It is used to store multiple values together in a structured way.
+
+In simple words:
+An object is like a real-world item — it has properties (data) and methods (actions).
+
+Example: A Simple Object
+let person = {
+  name: "Sumalatha",
+  age: 25,
+  city: "Hyderabad"
+};
+
+console.log(person.name);  // Output: Sumalatha
+
+
+Here:
+
+person → object name
+
+name, age, city → keys (properties)
+
+"Sumalatha", 25, "Hyderabad" → values
+
+Object Syntax
+let objectName = {
+  key1: value1,
+  key2: value2,
+  key3: value3
+};
+
+Keys are always strings (written without quotes usually).
+
+Values can be any data type — string, number, array, function, or even another object.
+
+Accessing Object Values
+
+There are two ways to access values in an object 
+
+Dot Notation
+console.log(person.name); // Output: Sumalatha
+
+Bracket Notation
+console.log(person["city"]); // Output: Hyderabad
+
+
+Use bracket notation when:
+
+The key name has spaces or special characters.
+
+You want to use a variable as a key.
+
+
+
+
+
+19)Js Arrays :
+
+An array is a special variable that can store multiple values in a single name.
+
+It’s like a container that holds a list of items — numbers, strings, objects, or even other arrays.
+
+Example:
+let fruits = ["apple", "banana", "cherry"];
+console.log(fruits[0]);  // Output: apple
+
+
+Here:
+
+fruits → name of the array
+
+["apple", "banana", "cherry"] → list of elements
+
+Index starts at 0 (so fruits[0] = "apple")
+
+1. Creating Arrays
+Using Array Literals (most common)
+let colors = ["red", "green", "blue"];
+
+Using new Array() constructor
+let numbers = new Array(10, 20, 30);
+
+2. Accessing Array Elements
+let cars = ["Tata", "BMW", "Audi"];
+console.log(cars[1]); // Output: BMW
+
+
+Remember:
+
+Index starts at 0
+
+cars[0] → first element
+
+cars[2] → third element
+
+3. Changing and Adding Elements
+Change existing value:
+cars[1] = "Mercedes";
+
+Add a new value:
+cars[3] = "Hyundai";
+
+4. Removing Elements
+Remove last element:
+cars.pop();
+
+Remove first element:
+cars.shift();
+
+5. Array Properties
+Property	Description	Example
+length	Returns number of elements	cars.length
+
+Example:
+
+console.log(cars.length); // Output: 3
+
+6. Array Methods (Most Common)
+
+Add Elements
+
+Method	     Description	Example
+push()	     Add to end	        cars.push("Honda")
+unshift()    Add to start	cars.unshift("Ford")
+
+Remove Elements
+
+Method	Description	Example
+pop()	Remove last	cars.pop()
+shift()	Remove first	cars.shift()
+
+Find / Check Elements
+
+Method	        Description	           Example
+indexOf()	Find index	        cars.indexOf("BMW")
+includes()	Check if value exists	cars.includes("Tata")
+
+Sort & Reverse
+
+Method	        Description	        Example
+sort()	     Sort alphabetically	cars.sort()
+reverse()	Reverse order	        cars.reverse()
+
+Extract / Modify
+
+Method	         Description	          Example
+slice()	        Returns a part of array	cars.slice(1,3)
+splice()	Add/remove items	cars.splice(2, 1, "Kia")
+
+Join / Combine
+
+Method	              Description	           Example
+concat()	     Merge arrays	           arr1.concat(arr2)
+join()	            Join elements into string	   cars.join(", ")
+
+
+Merging Arrays in JS:
+
+Merging (or combining) arrays means joining two or more arrays into a single array.
+
+Example:
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let merged = [1, 2, 3, 4, 5, 6];
+
+Method 1: Using concat() (Easiest Way)
+
+The concat() method joins two or more arrays and returns a new array (it doesn’t change the originals).
+
+Example:
+let arr1 = [10, 20, 30];
+let arr2 = [40, 50, 60];
+
+let merged = arr1.concat(arr2);
+console.log(merged);
+
+
+Output:
+
+[10, 20, 30, 40, 50, 60]
+
+
+You can also merge more than two:
+
+let arr3 = [70, 80];
+let all = arr1.concat(arr2, arr3);
+console.log(all); // [10, 20, 30, 40, 50, 60, 70, 80]
+
+Method 2: Using Spread Operator (...)
+
+The spread operator is the modern, shorter way to merge arrays (ES6+).
+
+Example:
+let arr1 = ["A", "B", "C"];
+let arr2 = ["D", "E", "F"];
+
+let merged = [...arr1, ...arr2];
+console.log(merged);
+
+
+Output:
+
+["A", "B", "C", "D", "E", "F"]
+
+
+You can also add new elements while merging:
+
+let final = [...arr1, "X", ...arr2, "Y"];
+console.log(final); // ["A", "B", "C", "X", "D", "E", "F", "Y"]
+
+
+
+
+
+20) Shifting Elements :
+
+In JavaScript, shifting elements means removing or adding elements at the beginning of an array.
+
+There are two main array methods related to shifting:
+
+Method	           Action	        Position	Description
+shift()	          Removes first element	Beginning	Moves all other elements down
+unshift()	  Adds new elements	Beginning	Moves existing elements up
+1. shift() Method
+Syntax:
+array.shift();
+
+Example:
+let fruits = ["apple", "banana", "cherry"];
+let removed = fruits.shift();
+
+console.log(fruits);  // Output: ["banana", "cherry"]
+console.log(removed); // Output: apple
+
+
+Explanation:
+
+The first element (apple) is removed.
+
+Remaining elements shift down one position.
+
+It returns the removed element.
+
+*shift() Important Points:
+
+Changes (mutates) the original array 
+
+Returns the removed element 
+
+New array starts from the next element
+
+2. unshift() Method
+Syntax:
+array.unshift(newElement1, newElement2, ...);
+
+Example:
+let colors = ["blue", "green"];
+colors.unshift("red");
+
+console.log(colors); // Output: ["red", "blue", "green"]
+
+Explanation:
+
+"red" is added to the beginning of the array.
+
+All other elements are shifted right.
+
+It returns the new length of the array.
+
+
+
+
+
+21)Changing Elements in js:
+
+An array in JavaScript stores multiple values, and you can easily change (update) any element using its index number.
+
+Example 1: Changing a Single Element
+
+let fruits = ["Apple", "Banana", "Mango"];
+fruits[1] = "Orange";   // Change element at index 1
+
+console.log(fruits);
+
+
+Output:
+
+["Apple", "Orange", "Mango"]
+
+
+Explanation:
+
+Arrays start at index 0
+
+So fruits[1] refers to "Banana" and we replaced it with "Orange"
+
+

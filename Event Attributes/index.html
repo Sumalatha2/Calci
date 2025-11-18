@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Events Example</title>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form>
+
+    <!-- onfocus and onblur -->
+    <label>Username:</label><br>
+    <input type="text" onfocus="this.style.background='lightyellow'" onblur="this.style.background='white'"><br><br>
+
+    <!-- onkeydown, onkeypress, onkeyup -->
+    <label>Password:</label><br>
+    <input type="password" 
+           onkeydown="alert('Key Down!')" 
+           onkeypress="alert('Key Pressed!')" 
+           onkeyup="alert('Key Up!')"><br><br>
+
+    <!-- onchange -->
+    <label>Choose your country:</label><br>
+    <select onchange="alert('You changed the country!')">
+      <option value="">--Select--</option>
+      <option>India</option>
+      <option>USA</option>
+      <option>UK</option>
+    </select><br><br>
+
+    <!-- onclick, onmouseover, onmouseout -->
+    <button type="button"
+            onclick="alert('Button clicked!')"
+            onmouseover="this.style.background='lightgreen'"
+            onmouseout="this.style.background='white'">
+      Submit
+    </button>
+
+  </form>
+
+</body>
+</html>

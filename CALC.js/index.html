@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f5f5f5;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 10px;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    input[type="button"] {
+      width: 60px;
+      height: 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #e3e3e3;
+      transition: background-color 0.2s;
+    }
+
+    input[type="button"]:hover {
+      background-color: #c9c9c9;
+    }
+
+    input[type="text"] {
+      width: 280px;
+      height: 40px;
+      text-align: right;
+      font-size: 18px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h2>Calculator</h2>
+
+  <div id="calcContainer"></div>
+
+  <script>
+    let table = document.createElement("table");
+    let row1 = document.createElement("tr");
+    let displayCell = document.createElement("td");
+    displayCell.colSpan = 4;
+    let display = document.createElement("input");
+    display.type = "text";
+    display.id = "display";
+    displayCell.appendChild(display);
+    row1.appendChild(displayCell);
+    table.appendChild(row1);
+
+    let buttons = [
+      ["7", "8", "9", "/"],
+      ["4", "5", "6", "*"],
+      ["1", "2", "3", "-"],
+      ["0", ".", "=", "+"],
+      ["C"]
+    ];
+
+    function addValue(val) {
+      let disp = document.getElementById("display");
+      disp.value += val;
+    }
+
+    function calculate() {
+      let disp = document.getElementById("display");
+      try {
+        disp.value = eval(disp.value);
+      } catch {
+        disp.value = "Error";
+      }
+    }
+
+    function clearDisplay() {
+      document.getElementById("display").value = "";
+    }
+
+    for (let i = 0; i < buttons.length; i++) {
+      let row = document.createElement("tr");
+      for (let j = 0; j < buttons[i].length; j++) {
+        let cell = document.createElement("td");
+        let btn = document.createElement("input");
+        btn.type = "button";
+        btn.value = buttons[i][j];
+
+        if (btn.value === "=") {
+          btn.onclick = calculate;
+        } else if (btn.value === "C") {
+          btn.onclick = clearDisplay;
+          cell.colSpan = 4; 
+        } else {
+          btn.onclick = function() { addValue(btn.value); };
+        }
+
+        cell.appendChild(btn);
+        row.appendChild(cell);
+      }
+      table.appendChild(row);
+    }
+    
+    document.getElementById("calcContainer").appendChild(table);
+  </script>
+</body>
+</html>

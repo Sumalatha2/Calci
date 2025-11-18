@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Attributes Example</title>
+</head>
+<body style="font-family: Arial; background-color: #f7f7f7; text-align: left;">
+  <h2>Registration</h2>
+  <form>
+    <label>Full Name</label><br>
+    <input type="text" id="name" placeholder="Enter your name"
+           onfocus="style.backgroundColor='lightyellow'"
+           onblur="style.backgroundColor='white'">
+    <br><br>
+    <label>Email</label><br>
+    <input type="email" id="email" placeholder="Enter your email"
+           onchange="alert('Email field value changed!')">
+    <br><br>
+    <label>Password</label><br>
+    <input type="password" id="password" placeholder="Enter password"
+           onkeydown="alert('Key Down - key is pressed down')"
+           onkeypress="alert('Key Pressed')"
+           onkeyup="alert('Key Released')">
+    <br><br>
+    <label>Gender</label><br>
+    <input type="radio" name="gender" value="Male"
+           onmouseover="style.color='navey blue'"
+           onmouseout="style.color='light blue'">Male
+    <input type="radio" name="gender" value="Female"
+           onmouseover="style.color='navey blue'"
+           onmouseout="style.color='light blue'">Female
+    <br><br>
+    <label>Country</label><br>
+    <select id="country" onchange="alert('You selected a country!')">
+      <option>India</option>
+      <option>USA</option>
+      <option>UK</option>
+      <option>Canada</option>
+    </select>
+    <br><br>
+    <button type="button" onclick="alert('Form Submitted Successfully!')">Submit</button>
+    <br><br>
+  </form>
+</body>
+</html>
